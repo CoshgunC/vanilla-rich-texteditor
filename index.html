@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Text Editor</title>
+	<link rel="stylesheet" href="./style.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<h1 class="heading-text">NextNotes</h1>
+	<div class="container">
+		<div class="options">
+			<!--Styling-->
+			<button id="bold" class="option-button format">
+				<i class="fa-solid fa-bold"></i>
+			</button>
+			<button id="italic" class="option-button format">
+				<i class="fa-solid fa-italic"></i>
+			</button>
+			<button id="underline" class="option-button format">
+				<i class="fa-solid fa-underline"></i>
+			</button>
+			<button id="strikethrough" class="option-button format">
+				<i class="fa-solid fa-strikethrough"></i>
+			</button>
+			<button id="superscript" class="option-button format">
+				<i class="fa-solid fa-superscript"></i>
+			</button>
+			<button id="subscript" class="option-button format">
+				<i class="fa-solid fa-subscript"></i>
+			</button>
+
+			<!--Lists-->
+			<button id="listUl" class="option-button">
+				<i class="fa-solid fa-list-ul"></i>
+			</button>
+			<button id="listOl" class="option-button">
+				<i class="fa-solid fa-list-ol"></i>
+			</button>
+
+			<!--Undo/Redo-->
+			<button id="undo" class="option-button">
+				<i class="fa-solid fa-undo"></i>
+			</button>
+			<button id="redo" class="option-button">
+				<i class="fa-solid fa-redo"></i>
+			</button>
+
+			<!--Links-->
+			<button id="link" class="adv-option-button">
+				<i class="fa-solid fa-link"></i>
+			</button>
+			<button id="unlink" class="option-button">
+				<i class="fa-solid fa-unlink"></i>
+			</button>
+
+			<!-- Code
+			<button id="code" class="adv-option-button">
+				<i class="fa-solid fa-code"></i>
+			</button> -->
+
+			<!--Alignment-->
+			<button id="alignLeft" class="option-button align">
+				<i class="fa-solid fa-align-left"></i>
+			</button>
+			<button id="alignCenter" class="option-button align">
+				<i class="fa-solid fa-align-center"></i>
+			</button>
+			<button id="alignRight" class="option-button align">
+				<i class="fa-solid fa-align-right"></i>
+			</button>
+			<button id="alignFull" class="option-button align">
+				<i class="fa-solid fa-align-justify"></i>
+			</button>
+
+			<!--Indent/Outdent-->
+			<button id="indent" class="option-button spacing">
+				<i class="fa-solid fa-indent"></i>
+			</button>
+			<button id="outdent" class="option-button spacing">
+				<i class="fa-solid fa-outdent"></i>
+			</button>
+
+			<!--Headings-->
+			<!--heading === formatBlock-->
+			<select id="formatBlock" class="adv-option-button">
+				<option value="H1">H1</option>
+				<option value="H2">H2</option>
+				<option value="H3">H3</option>
+				<option value="H4">H4</option>
+				<option value="H5">H5</option>
+				<option value="H6">H6</option>
+			</select>
+
+			<!--Font-family-->
+			<select id="fontName" class="adv-option-button">
+			</select>
+			<select id="fontSize" class="adv-option-button">
+			</select>
+
+			<div class="input-wrapper">
+				<label for="foreColor">Color: </label>
+				<input type="color" id="foreColor" class="adv-option-button"/>
+			</div>
+			<div class="input-wrapper">
+				<label for="backColor">Background Color: </label>
+				<input type="color" id="backColor" class="adv-option-button"/>
+			</div>
+		</div>
+		<div id="text-input-area" contenteditable="true"></div>
+	</div>
+</body>
+<script defer type="text/javascript" src="./script.js"></script>
+</html>
